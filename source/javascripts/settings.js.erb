@@ -20,6 +20,14 @@ var MEME_SETTINGS = {
     {text: 'Large text', value: 36}
   ],
 
+  fontColorOpts: [
+    'white',
+    'black',
+    'pink',
+    'green',
+    'yellow'
+  ],
+
   headlineText: 'Write your own headline', // Default headline text.
   height: 378, // Canvas rendering height.
   imageScale: 1, // Background image scale.
@@ -55,7 +63,8 @@ var MEME_SETTINGS = {
   // Otherwise, just leave "data" attributes blank and allow images to load from your server.
   watermarkOpts: [
     {text: 'Vox', value: '<%= image_path("vox.png") %>', data: '<%= asset_data_uri("vox.png") %>'},
-    {text: 'The Verge', value: '<%= image_path("theverge.png") %>', data: ''}
+    {text: 'The Verge', value: '<%= image_path("theverge.png") %>', data: ''},
+    {text: 'Criativa', value: '<%= image_path("criativa.png") %>', data: ''},
   ],
 
   width: 755 // Canvas rendering width.
